@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="658.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.adminTalepController">
+   <children>
+      <Pane layoutX="2.0" prefHeight="69.0" prefWidth="894.0" style="-fx-background-color: #CD5C5C;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Text layoutX="7.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Talepleri" wrappingWidth="483.677734375">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="844.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_to_64px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="geriButton" layoutX="811.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="86.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="589.0" prefWidth="894.0" style="-fx-background-color: #696969;">
+         <children>
+            <TextField fx:id="id" layoutX="113.0" layoutY="416.0" prefHeight="47.0" prefWidth="243.0" promptText="ID" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </TextField>
+            <Button fx:id="sil" layoutX="490.0" layoutY="414.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Text layoutX="508.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sil">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="593.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_broom_128px.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tableview" prefHeight="327.0" prefWidth="894.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="adiCol" prefWidth="108.0" text="Adı" />
+                  <TableColumn fx:id="SoyadiCol" prefWidth="139.0" text="Soyadı" />
+                  <TableColumn fx:id="talebiCol" prefWidth="571.0" text="Talebi" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

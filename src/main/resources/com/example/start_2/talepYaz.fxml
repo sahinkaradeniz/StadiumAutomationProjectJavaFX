@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="658.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.talepControllerHome">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9;">
+         <children>
+            <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Talep Ekranı" wrappingWidth="301.677734375">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="836.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_to_64px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="geriButton" layoutX="811.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="86.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="590.0" prefWidth="894.0" style="-fx-background-color: #696969;">
+         <children>
+            <Text fill="#ebebeb" layoutX="141.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Görüş ve önerileriniz bizim için Değerlidir.">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="talepText" layoutX="131.0" layoutY="150.0" prefHeight="200.0" prefWidth="632.0" style="-fx-background-radius: 12;" />
+            <Button fx:id="gonder" layoutX="260.0" layoutY="422.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="345.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Gönder" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

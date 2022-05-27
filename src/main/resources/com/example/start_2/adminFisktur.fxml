@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="658.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.adminFiskturController">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="894.0" style="-fx-background-color: #CD5C5C;">
+         <children>
+            <Text layoutX="7.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fisktür Düzenleme" wrappingWidth="483.677734375">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="844.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_to_64px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="geriButton" layoutX="811.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="86.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="592.0" prefWidth="894.0" style="-fx-background-color: #696969;">
+         <children>
+            <TableView fx:id="tableview" prefHeight="297.0" prefWidth="894.0" style="-fx-background-color: #696969;">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="93.0" text="ID" />
+                  <TableColumn fx:id="evCol" prefWidth="279.0" text="Ev Sahibi" />
+                  <TableColumn fx:id="konukCol" prefWidth="311.0" text="Konuk" />
+                  <TableColumn fx:id="yerCol" prefWidth="210.0" text="Tarih" />
+              </columns>
+            </TableView>
+            <Button fx:id="ekle" layoutX="614.0" layoutY="500.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <TextField fx:id="id" layoutX="96.0" layoutY="330.0" prefHeight="47.0" prefWidth="243.0" promptText="ID" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tarih" layoutX="531.0" layoutY="407.0" prefHeight="47.0" prefWidth="243.0" promptText="Tarih" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="konuk" layoutX="96.0" layoutY="407.0" prefHeight="48.0" prefWidth="243.0" promptText="Konuk" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="evsahibi" layoutX="531.0" layoutY="330.0" prefHeight="47.0" prefWidth="243.0" promptText="Ev Sahibi" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </TextField>
+            <Button fx:id="sil" layoutX="69.0" layoutY="500.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="yenile" layoutX="391.0" layoutY="500.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="96.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Text layoutX="112.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sil">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="636.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ekle" wrappingWidth="46.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="169.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_broom_128px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="718.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_soccer_128px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="411.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_refresh_200px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

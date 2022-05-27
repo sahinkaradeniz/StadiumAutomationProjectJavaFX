@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="658.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.recordController">
+    <children>
+        <Pane layoutY="86.0" prefHeight="751.0" prefWidth="1182.0" style="-fx-background-color: #636e72;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="86.0">
+            <children>
+                <Pane layoutY="-86.0" prefHeight="88.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9;">
+                    <children>
+                        <Text layoutX="21.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kayıt Olmak İçin Bilgilerinizi Giriniz" wrappingWidth="521.41357421875">
+                            <font>
+                                <Font name="System Bold" size="31.0" />
+                            </font>
+                        </Text>
+
+                    </children>
+                </Pane>
+                <TextField fx:id="txtad" layoutX="150.0" layoutY="73.0" prefHeight="49.0" prefWidth="224.0" promptText="Adınız" style="-fx-background-radius: 12;" />
+                <Label layoutX="44.0" layoutY="87.0" text="Adınız " textFill="#f2eded">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="44.0" layoutY="184.0" text="Soyadınız" textFill="#f2eded">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtsoyad" layoutX="150.0" layoutY="170.0" prefHeight="49.0" prefWidth="224.0" promptText="Soyadınız" style="-fx-background-radius: 12;" />
+                <Label layoutX="48.0" layoutY="286.0" text="Tc No" textFill="#f2eded">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txttc" layoutX="150.0" layoutY="271.0" prefHeight="49.0" prefWidth="224.0" promptText="Tc Kimlik Numaranız" style="-fx-background-radius: 12;" />
+                <Label layoutX="500.0" layoutY="84.0" text="E mail" textFill="#f2eded">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtmail" layoutX="587.0" layoutY="76.0" prefHeight="49.0" prefWidth="224.0" promptText="E Mail Adresiniz" style="-fx-background-radius: 12;" />
+                <Label layoutX="500.0" layoutY="183.0" style="-fx-background-radius: 12;" text="Şifreniz" textFill="#fff9f9">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="txtsifre" layoutX="587.0" layoutY="168.0" prefHeight="49.0" prefWidth="224.0" promptText="Şifreniz" style="-fx-background-radius: 12;" />
+                <Button fx:id="kayittamamlama" layoutX="519.0" layoutY="414.0" mnemonicParsing="false" onAction="#Insert" prefHeight="64.0" prefWidth="298.0" style="-fx-background-radius: 15 15 15 15; -fx-background-color: #20B2AA;" />
+                <Button fx:id="kayıtgeri" layoutX="72.0" layoutY="414.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="64.0" prefWidth="286.0" style="-fx-background-radius: 15 15 15 15; -fx-background-color: #CD5C5C;" />
+                <TextField fx:id="txttel" layoutX="587.0" layoutY="263.0" prefHeight="49.0" prefWidth="224.0" promptText="Telefon Numaranız" style="-fx-background-radius: 12;" />
+                <Label layoutX="501.0" layoutY="283.0" text="Tel. No" textFill="#fff9f9">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            <Text layoutX="89.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giriş Sayfasına Dön">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="581.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kayıt Ol">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="281.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="74.0" layoutX="699.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_save_100px.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

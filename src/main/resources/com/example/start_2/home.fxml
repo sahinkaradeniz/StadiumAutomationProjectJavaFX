@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="638.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.homePageController">
+   <children>
+      <Pane prefHeight="87.0" prefWidth="894.0" style="-fx-background-color: #696969; -fx-background-radius: 10 10 0 0;">
+         <children>
+            <Label fx:id="homeGirisLabel" layoutX="27.0" layoutY="19.0" text="Hoşgeldiniz Şahin Karadeniz" textFill="#e1dbdb">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="87.0" prefHeight="556.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 0 0 10 10;">
+         <children>
+            <Label layoutX="22.0" layoutY="41.0" text="Yapacağınız işlemi seçiniz" textFill="#2c2b2b">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="homeBilet" layoutX="43.0" layoutY="108.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Bilet İşlemleri" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBakiye" layoutX="43.0" layoutY="186.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Bakiye İşlemleri" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeFisktür" layoutX="43.0" layoutY="257.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Lig Fisktürü" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="homePuantablo" layoutX="43.0" layoutY="327.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Puan tablosu" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="bilgilerim" layoutX="43.0" layoutY="399.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Bilgilerim" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <TableView fx:id="homeMaclarTable" layoutX="256.0" layoutY="108.0" prefHeight="341.0" prefWidth="629.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 10;">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="52.0" text="No" />
+                <TableColumn fx:id="konukCol" prefWidth="139.0" text="Konuk Takım" />
+                  <TableColumn fx:id="evCol" prefWidth="154.0" text="Ev Sahibi" />
+                  <TableColumn fx:id="tarihCol" prefWidth="122.0" text="Tarih" />
+                  <TableColumn fx:id="yerCol" prefWidth="161.0" text="Yer" />
+              </columns>
+            </TableView>
+            <Label layoutX="478.0" layoutY="41.0" text="Bilet Alabileceğiniz Maçlar" textFill="#2c2b2b">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Text layoutX="354.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Talep görüş ve önerileriniz için bizimle iletişime geçin.">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Label layoutX="799.0" layoutY="478.0" text="Tıklayın!" textFill="#3ad74f">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="talep" layoutX="790.0" layoutY="472.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="95.0" />
+            <Button fx:id="homeBiletim" layoutX="43.0" layoutY="471.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" text="Biletim" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="658.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.loginController">
+   <children>
+      <Pane layoutX="291.0" layoutY="3.0" prefHeight="658.0" prefWidth="462.0" style="-fx-background-color: #696969;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="loginGiris" layoutX="259.0" layoutY="455.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;" text="Giriş Yap" textFill="#f5fcf5">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginUyeol" layoutX="121.0" layoutY="455.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="52.0" prefWidth="110.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;" text="Üye ol" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <TextField fx:id="loginTcno" layoutX="127.0" layoutY="216.0" prefHeight="52.0" prefWidth="271.0" promptText="Tc. No" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="loginPassword" layoutX="127.0" layoutY="329.0" prefHeight="52.0" prefWidth="271.0" promptText="sifre" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;" />
+            <Label layoutX="148.0" layoutY="65.0" text="Hoşgeldiniz.">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Text layoutX="48.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TC No">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="54.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sifre">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Label fx:id="loginLabel" layoutX="123.0" layoutY="163.0" textFill="#e82929">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="666.0" prefWidth="447.0" style="-fx-background-color: #a9a9a9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="315.0" fitWidth="476.0" layoutX="67.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/pngwing.com.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="276.0" fitWidth="447.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/pngwing.com%20(1).png" />
+               </image>
+            </ImageView>
+            <Text layoutX="19.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Stadyum Bilet Satış Otomasyon Sistemleri">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

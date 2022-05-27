@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.macController">
+    <children>
+        <TableView fx:id="tableview" prefHeight="242.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="İd" />
+                <TableColumn fx:id="evCol" prefWidth="97.0" text="ev sahibi" />
+                <TableColumn fx:id="konukCol" prefWidth="97.0" text="konuk" />
+                <TableColumn fx:id="tarihCol" prefWidth="97.0" text="tarih" />
+                <TableColumn fx:id="yerCol" prefWidth="97.0" text="yer" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="yenile" layoutX="261.0" layoutY="314.0" mnemonicParsing="false" text="Button" />
+        <TextField fx:id="txtad" layoutX="207.0" layoutY="266.0" />
+    </children>
+</AnchorPane>

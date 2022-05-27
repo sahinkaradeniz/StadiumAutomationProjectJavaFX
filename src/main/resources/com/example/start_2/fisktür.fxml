@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="658.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.homeFisktur">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9;">
+         <children>
+            <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lig Fikstürü" wrappingWidth="301.677734375">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="838.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_to_64px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="geriButton" layoutX="811.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="86.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="591.0" prefWidth="894.0" style="-fx-background-color: #696969;">
+         <children>
+            <TableView fx:id="tableview" prefHeight="591.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9;">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="73.0" text="ID" />
+                <TableColumn fx:id="evCol" minWidth="0.0" prefWidth="235.0" text="Ev Sahibi" />
+                  <TableColumn fx:id="konukCol" minWidth="0.0" prefWidth="250.0" text="Konuk" />
+                  <TableColumn fx:id="yerCol" minWidth="0.0" prefWidth="335.0" text="YER" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

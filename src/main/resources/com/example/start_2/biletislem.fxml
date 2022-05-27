@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="628.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.biletController">
+   <children>
+      <Pane layoutX="6.0" layoutY="-1.0" prefHeight="69.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bilet İşlemleri" wrappingWidth="301.677734375">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="844.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_to_64px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="geriButton" layoutX="811.0" layoutY="1.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="86.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="560.0" prefWidth="894.0" style="-fx-background-color: #696969;">
+         <children>
+            <TableView fx:id="homeMaclarTable" prefHeight="224.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 10;">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="52.0" text="No" />
+                  <TableColumn fx:id="konukCol" prefWidth="228.0" text="Konuk Takım" />
+                  <TableColumn fx:id="evCol" prefWidth="197.0" text="Ev Sahibi" />
+                  <TableColumn fx:id="tarihCol" prefWidth="116.0" text="Tarih" />
+                  <TableColumn fx:id="yerCol" prefWidth="300.0" text="Yer" />
+               </columns>
+            </TableView>
+            <Label layoutX="22.0" layoutY="241.0" prefHeight="35.0" prefWidth="96.0" text="Maç No">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="macno" layoutX="126.0" layoutY="241.0" prefHeight="39.0" prefWidth="243.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;" />
+            <TextField fx:id="koltukno" disable="true" layoutX="126.0" layoutY="338.0" prefHeight="39.0" prefWidth="243.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;" />
+            <Label layoutX="22.0" layoutY="340.0" prefHeight="35.0" prefWidth="96.0" text="Koltuk No">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="409.0" prefHeight="35.0" prefWidth="71.0" text="Ücret ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ucret" disable="true" layoutX="126.0" layoutY="407.0" prefHeight="39.0" prefWidth="243.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 12;" />
+            <ImageView fitHeight="274.0" fitWidth="363.0" layoutX="447.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/Downloads/artflow_202201112045.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="biletal" layoutX="22.0" layoutY="485.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="345.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 12;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="k2" layoutX="514.0" layoutY="291.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="K2" />
+            <Button fx:id="k5" layoutX="562.0" layoutY="259.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #00bfff;" text="K5" />
+            <Button fx:id="k6" layoutX="562.0" layoutY="291.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #add8e6;" text="K6" />
+            <Button fx:id="k1" layoutX="514.0" layoutY="259.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="K1" />
+            <Button fx:id="k3" layoutX="691.0" layoutY="259.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="K3" />
+            <Button fx:id="k4" layoutX="691.0" layoutY="291.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="K4" />
+            <Button fx:id="b1" layoutX="447.0" layoutY="327.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="71.0" style="-fx-background-color: #20b2aa;" text="B1" />
+            <Button fx:id="b2" layoutX="447.0" layoutY="359.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="71.0" style="-fx-background-color: #00bfff;" text="B2" />
+            <Button fx:id="b3" layoutX="447.0" layoutY="422.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="71.0" style="-fx-background-color: #20b2aa;" text="B3" />
+            <Button fx:id="d1" layoutX="733.0" layoutY="327.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: #20b2aa;" text="D1" />
+            <Button fx:id="d2" layoutX="733.0" layoutY="365.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="78.0" style="-fx-background-color: #00bfff;" text="D2" />
+            <Button fx:id="d3" layoutX="733.0" layoutY="422.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: #20b2aa;" text="D3" />
+            <Button fx:id="g1" layoutX="516.0" layoutY="455.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="G1" />
+            <Button fx:id="g3" layoutX="516.0" layoutY="494.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="G3" />
+            <Button fx:id="g5" layoutX="565.0" layoutY="494.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #00bfff;" text="G5" />
+            <Button fx:id="g6" layoutX="565.0" layoutY="455.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #add8e6;" text="G6" />
+            <Button fx:id="g2" layoutX="686.0" layoutY="455.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="G2" />
+            <Button fx:id="g4" layoutX="686.0" layoutY="492.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="49.0" style="-fx-background-color: #20b2aa;" text="G4" />
+            <Line endX="124.0" layoutX="615.0" layoutY="291.0" startX="-100.0" stroke="#ff0e0e" strokeWidth="2.0" />
+            <Line endX="124.0" layoutX="617.0" layoutY="494.0" startX="-100.0" stroke="RED" strokeWidth="2.0" />
+            <Text fill="WHITE" layoutX="22.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Seçmek istediğiniz koltuğa tıklayınız">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="uyari" layoutX="22.0" layoutY="455.0" textFill="#eb0202">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="494.0" text="İşlemi Tamamla">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="64.0" layoutX="278.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_ticket_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

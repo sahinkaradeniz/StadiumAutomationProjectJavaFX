@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="654.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.start_2.adminMaclarController">
+   <children>
+      <Pane layoutY="-6.0" prefHeight="83.0" prefWidth="894.0" style="-fx-background-color: #CD5C5C;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Müsabaka Ekleme">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <Button fx:id="geriButton" layoutX="810.0" layoutY="7.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="86.0" />
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="833.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_back_to_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="76.0" prefHeight="578.0" prefWidth="894.0" style="-fx-background-color: #a9a9a9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="evsahibi" layoutX="170.0" layoutY="267.0" prefHeight="38.0" prefWidth="270.0" promptText="Ev sahibi" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="yer" layoutX="541.0" layoutY="337.0" prefHeight="38.0" prefWidth="270.0" promptText="Yer" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="konuk" layoutX="170.0" layoutY="337.0" prefHeight="38.0" prefWidth="270.0" promptText="Konuk" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tarih" layoutX="541.0" layoutY="267.0" prefHeight="38.0" prefWidth="270.0" promptText="Tarih" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tableview" prefHeight="239.0" prefWidth="894.0" style="-fx-background-color: #ADD8E6; -fx-background-radius: 10;">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="52.0" text="No" />
+                  <TableColumn fx:id="konukCol" prefWidth="228.0" text="Konuk Takım" />
+                  <TableColumn fx:id="evCol" prefWidth="197.0" text="Ev Sahibi" />
+                  <TableColumn fx:id="tarihCol" prefWidth="116.0" text="Tarih" />
+                  <TableColumn fx:id="yerCol" prefWidth="300.0" text="Yer" />
+               </columns>
+            </TableView>
+            <Button fx:id="silMac" layoutX="99.0" layoutY="432.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="202.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 15;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="ekleMac" layoutX="607.0" layoutY="431.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="202.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 15;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Text layoutX="145.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SİL">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="645.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EKLE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Button fx:id="yenile" layoutX="404.0" layoutY="432.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="86.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 15;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <TextField fx:id="id" layoutX="28.0" layoutY="267.0" prefHeight="38.0" prefWidth="100.0" promptText="ID" style="-fx-background-color: #ADD8E6; -fx-background-radius: 12;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="216.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_broom_128px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="738.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_soccer_128px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="419.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/sahin/IdeaProjects/Start_2/src/main/java/image/icons8_refresh_200px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
